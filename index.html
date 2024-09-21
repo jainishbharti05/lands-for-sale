@@ -12,27 +12,111 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            color: #333;
         }
 
         header {
             background: url('https://plus.unsplash.com/premium_photo-1663946642504-2cd0aeb17ad9?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
-            height: 400px;
+            height: 450px;
             color: #fff;
             text-align: center;
-            padding-top: 150px;
+            padding-top: 180px;
+            background-blend-mode: overlay;
         }
 
-        .map,
-        .ads {
+        header h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .highlight {
+            background-color: #28a745;
+            padding: 5px 10px;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .container {
+            padding: 50px 0;
+        }
+
+        h2 {
+            color: #643500;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #01003b;
             margin-top: 30px;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .map iframe {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .price-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .price-info p {
+            font-size: 1.2rem;
+            color: #333;
         }
 
         footer {
             background-color: #333;
             color: #fff;
-            text-align: center;
             padding: 20px 0;
+            text-align: center;
             margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #28a745;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .whatsapp-link img {
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .small-para {
+            font-size: smaller;
         }
     </style>
 </head>
@@ -42,66 +126,90 @@
     <!-- Header Section -->
     <header>
         <h1>Beautiful Land for Sale</h1>
-        <p>Your perfect opportunity to own a piece of paradise</p>
+        <p>Your perfect opportunity to own a <span class="highlight">piece of paradise</span> in Supaul</p>
     </header>
 
     <!-- Content Section -->
-    <div class="container my-5">
-        <!-- Row for Land Details and Google Map -->
+    <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <h2>Land Details</h2>
                 <p>This land is situated in a prime location, perfect for building a hospital, residential purpose,
-                    storage home, or as an investment property. Close to amenities, schools, and shopping.</p>
+                    storage home, or as an investment property. Close to amenities, schools, and shopping, this property
+                    offers endless possibilities for development.</p>
 
-                <h3>Features:</h3>
+                <h3>Key Features</h3>
                 <ul>
                     <li>Size: 2 kathha 6 dhur</li>
-                    <li>Open Rates - 65 lakhs/ kathha</li>
-                    <li>Location: Simrahi Bazar, Station Road, Supaul, Bihar -852111</li>
-                    <li>Existing boundaries available already</li>
-                    <li>Access to major roads and state highways, situated in main market area</li>
+                    <li>Price: ₹65 lakhs per kathha</li>
+                    <li>Location: Simrahi Bazar, Station Road, Supaul, Bihar - 852111</li>
+                    <li>Clear and defined property boundaries</li>
+                    <li>Easy access to major roads and state highways</li>
+                    <li>Located in a vibrant marketplace with proximity to schools and hospitals</li>
                 </ul>
-
-                <!-- Google Map Embed -->
-                <h3> Embedded Location</h3>
-                <div class="map">
-                    <iframe title="Land Location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4242.556261912334!2d86.8417632759565!3d26.307042585855477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee546c89490305%3A0x109cee750927df9a!2sMehta%20Hospital%20Simarahi%20Bazar!5e1!3m2!1sen!2sin!4v1726894995876!5m2!1sen!2sin"
-                        width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
             </div>
-
         </div>
 
-        <!-- Contact Information -->
+        <!-- Blueprint -->
+        <div class="container mt-0">
+            <h3>Land Blueprint</h3>
+            <p>Below is the detailed blueprint of the land showing the landmarks and boundary for sale:</p>
+            <div class="text-center">
+                <img src="land_blueprint.png" alt="Land Blueprint" class="img-fluid rounded"
+                    style="max-width: 100%; height: auto; border: 1px solid #ddd;">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Location on Map</h3>
+                    <div class="map mt-3">
+                        <iframe title="Land Location"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4242.556261912334!2d86.8417632759565!3d26.307042585855477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee546c89490305%3A0x109cee750927df9a!2sMehta%20Hospital%20Simarahi%20Bazar!5e1!3m2!1sen!2sin!4v1726894995876!5m2!1sen!2sin"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact and Price Section -->
         <div class="row mt-5">
-            <div class="col-md-6">
+            <!-- Contact Info -->
+            <div class="col-md-6 contact-info">
                 <h3>Contact Information</h3>
-                <p>Interested in this property? Contact us today!</p>
+                <p>Interested in this property? Reach out to us!</p>
                 <ul>
-                    <li>Phone: +123456789</li>
-                    <li>Email: nagendra21279@gmail.com</li>
-                    <li>Address: Simrahi Bazar, Station Road, Supaul, Bihar -852111</li>
-                    <li>WhatsApp: <a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX">
-                            <img alt="Chat on WhatsApp" src="whatsappimg.png" height="40px" />
-                            <a></li>
+                    <li><strong>Phone:</strong> +91-9870266598</li>
+                    <li><strong>Email:</strong> <a href="mailto:nagendra21279@gmail.com">nagendra21279@gmail.com</a>
+                    </li>
+                    <li><strong>Address:</strong> Simrahi Bazar, Station Road, Supaul, Bihar - 852111</li>
+                    <li><strong>WhatsApp:</strong>
+                        <a href="https://wa.me/919870266598?text=Hello%2C%20I%27m%20interested%20in%20your%20land%20for%20sale%20advertised%20online%2C%20and%20want%20to%20know%20more%20about%20the%20property.%20Please%20help%20me%20out%20with%20more%20details."
+                            class="whatsapp-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                                width="30px">
+                            Chat on WhatsApp
+                        </a>
+                    </li>
                 </ul>
             </div>
 
-            <!-- Pricing Section -->
-            <div class="col-md-6">
+            <!-- Pricing Info -->
+            <div class="col-md-6 price-info">
                 <h3>Price Details</h3>
-                <p><strong>Price per kathha:</strong> INR 65 lakhs</p>
-                <p><strong>Total Price:</strong>INR 1.35 crore </p>
+                <p><strong>Price per kathha:</strong> ₹65 lakhs <span class="small-para"><i>(Open price for
+                            all)</i></span></p>
+                <p><strong>Total Price for 2 kathha 6 dhur:</strong> ₹ 1.35 crore</p>
+                <p><em>We're open for slight negotiation. Reach out to us from contact section.</em></p>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Land for Sale. All rights reserved.</p>
+        <p>&copy; 2024 Land for Sale. All rights reserved. | Designed by Us</p>
     </footer>
 
     <!-- Bootstrap JS -->
